@@ -21,6 +21,7 @@
     font-size: 20px;
     text-align: center;
 }
+
 .login_modal_box{
     width:400px;
     height:350px;
@@ -28,6 +29,7 @@
     margin:40px auto 0;
     border-radius: 6px;
 }
+
 .login_modal_box p{
     font-size: 14px;
     color: #48576a;
@@ -45,6 +47,8 @@
     padding-right:6px;
 }
 .login_banner .login_modal_box .login_input{
+    width:320px;
+    height:40px;
     margin-left:40px;
 }
 .login_banner .login_modal_box .login_primary{
@@ -57,3 +61,83 @@
     margin-top:30px;
 }
 
+@media screen and (max-width: 414px){
+    .login_headline{
+        font-size:35px;
+        color: #fff;
+        text-align: center;
+        margin-top:100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .login_headline{
+        font-size:35px;
+        color: #fff;
+        text-align: center;
+        margin-top:80px;
+    }
+    .login_modal_box {
+        width:350px;
+        height:350px;
+        background:#fff;
+        margin:40px auto 0;
+        border-radius: 6px;
+    }
+    .login_modal_box p{
+        font-size: 14px;
+        color: #48576a;
+        margin-bottom:10px;
+        padding-left:25px;
+    }
+    .login_banner .login_modal_box .login_input{
+        width:300px;
+        height:40px;
+        margin-left:25px;
+    }
+    .login_banner .login_modal_box .login_primary{
+        width:300px;
+        height:40px;
+        background: black;
+        color: #ffd100;
+        font-size: 14px;
+        margin-left:25px;
+        margin-top:30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .login_headline{
+        font-size:35px;
+        color: #fff;
+        text-align: center;
+        margin-top:30px;
+    }
+    .login_modal_box {
+        width:300px;
+        height:350px;
+        background:#fff;
+        margin:30px auto 0;
+        border-radius: 6px;
+    }
+    .login_modal_box p{
+        font-size: 14px;
+        color: #48576a;
+        margin-bottom:10px;
+        padding-left:10px;
+    }
+    .login_banner .login_modal_box .login_input{
+        width:280px;
+        height:40px;
+        margin-left:10px;
+    }
+    .login_banner .login_modal_box .login_primary{
+        width:280px;
+        height:40px;
+        background: black;
+        color: #ffd100;
+        font-size: 14px;
+        margin-left:10px;
+        margin-top:30px;
+    }
+}

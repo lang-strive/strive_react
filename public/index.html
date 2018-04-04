@@ -4,6 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <!--禁止缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!--ios上的safari上地址栏和顶端样式条-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--ios7以上版本没有效果-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--禁止ios上自动识别电话-->
+    <meta name="format-detection" content="telephone=no">
+    <!--禁止android上自动识别邮箱-->
+    <meta name="format-detection" content="email=no">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -26,6 +38,7 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <audio src="./audio/music.mp3" loop autoplay></audio>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
