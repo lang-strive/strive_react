@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router , Route , Link } from 'react-router-dom';
+import { BrowserRouter as Router , Route , Link , Switch} from 'react-router-dom';
 import './App.css';
 
 import Login from './components/Login/login';
@@ -13,10 +13,12 @@ class App extends Component {
           <div className="App">
             <Link to='/'></Link>
             <Link to='/home'></Link>
-            <Route exact path='/' component={Login}/>
-            {/* <Login/> */}
-            <Route exact path='/home' component={Home}/>
-           
+            <Switch>
+              <Route exact path='/' component={Login}/>
+              {/* <Login/> */}
+              <Route exact path='/home' component={Home}/>
+              <Route component={Home}/>
+            </Switch>
           </div>
         </Router>
     );
