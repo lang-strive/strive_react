@@ -142,8 +142,18 @@ body{
     border-radius: 6px;
     cursor: pointer;
     transition: .3s ease-in all;
-    
+    animation:laowang 2s forwards;
 }
+
+	/*定义*/
+	@keyframes laowang{
+		from{
+			transform:translateX(-100px);	
+		}
+		to{
+			transform:translateX(0px);	
+		}	
+	}
 
 .home_box .home_nav_content .home_nav_content_list:hover{
     margin-top:-1px;
