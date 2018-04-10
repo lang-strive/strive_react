@@ -46,8 +46,8 @@ class Home extends Component{
                 </div>
                 <nav className="home_nav_headline_first">Web</nav>
                 <div className="home_nav_content">
-                    <Row type="flex" justify="center" gutter={{lg:30,md:25,sm:20}}>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                    <Row type="flex" justify="center" gutter={{xl:30,lg:30,md:25,sm:20}}>
+                        <Col xl={6} lg={5} md={7} sm={11} xs={20}>
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_node.jpg"/></li>
@@ -57,7 +57,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20} >
+                        <Col xl={6} lg={5} md={7} sm={11} xs={20} >
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_js.jpg"/></li>
@@ -67,7 +67,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                        <Col xl={6} lg={5} md={7} sm={11} xs={20}>
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_vue.jpg"/></li>
@@ -77,7 +77,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20} >
+                        <Col xl={6.5} lg={5} md={7} sm={11} xs={20} >
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_react.jpg"/></li>
@@ -87,7 +87,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                        <Col xl={4} lg={5} md={7} sm={11} xs={20}>
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_es6.jpg"/></li>
@@ -97,7 +97,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20} >
+                        <Col xl={4} lg={5} md={7} sm={11} xs={20} >
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_h5.jpg"/></li>
@@ -107,7 +107,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                        <Col xl={4} lg={5} md={7} sm={11} xs={20}>
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_webpack.jpg"/></li>
@@ -117,7 +117,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20} >
+                        <Col xl={4} lg={5} md={7} sm={11} xs={20} >
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_xiaochengxu.jpg"/></li>
@@ -132,7 +132,7 @@ class Home extends Component{
                 <nav className="home_nav_headline">Superman</nav>
                 <div className="home_nav_content">
                     <Row type="flex" justify="center" gutter={{lg:30,md:25,sm:20}}>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                        <Col xl={4} lg={5} md={7} sm={11} xs={20}>
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_personal_station.jpg" style={{top:'-40px'}}/></li>
@@ -142,7 +142,7 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                        <Col xl={4} lg={5} md={7} sm={11} xs={20}>
                             <div className="home_nav_content_list">
                                 <ul>
                                     <li><img src="./img/home_resume.jpg" style={{left:'-26px',top:'-189px'}}/></li>
@@ -152,10 +152,10 @@ class Home extends Component{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                        <Col xl={3} lg={5} md={7} sm={11} xs={20}>
     
                         </Col>
-                        <Col lg={5} md={7} sm={11} xs={20}>
+                        <Col xl={3} lg={5} md={7} sm={11} xs={20}>
     
                         </Col>
                     </Row>
