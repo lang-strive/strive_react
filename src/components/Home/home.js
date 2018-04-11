@@ -3,12 +3,19 @@ import { Row, Col } from 'antd';
 import './home.css';
 import '../../base.css';
 import 'animate.css';
+import {store} from '../../store/store.js';
+
+import createHistory from 'history/createBrowserHistory'
+const history = createHistory()
 
 class Home extends Component{
+    componentDidMount(){
+
+    }
     render(){
         return (
             <div className="home_box">
-                <div className="home_nav">
+                {/* <div className="home_nav" style={{display:store.getState()==true?'block':'none'}}>
                     <div className="home_header clearfix">
                         <h1 className="home_headline fl">Strive</h1>
                         <ul className="home_module">
@@ -43,7 +50,7 @@ class Home extends Component{
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
                 <nav className="home_nav_headline_first">Web</nav>
                 <div className="home_nav_content">
                     <Row type="flex" justify="center" gutter={{xl:30,lg:30,md:25,sm:20}}>
