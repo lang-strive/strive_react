@@ -5,137 +5,65 @@ import '../../base.css';
 import 'animate.css';
 import { BrowserRouter as Router , Route , Link , Switch,withRouter,Redirect} from 'react-router-dom';
 import {store} from '../../store/store.js';
+import HomePage from './home_page.js';
 
 import createHistory from 'history/createBrowserHistory'
 const history = createHistory()
 
 class Home extends Component{
+    constructor(){
+        super();
+        this.state={
+            web:false,
+            superman:false,
+            setSetting:false
+        }
+    }
+    componentDidMount(){
+        setTimeout(()=>{
+
+        },1000)
+    }
     handleClick_home(){
         this.props.history.replace('/home');
     }
+    handleClick_web_mousemover(){
+        this.setState({
+            web:true
+        })
+    }
+    handleClick_web_mouseout(){
+        this.setState({
+            web:false
+        })
+    }
+
+    handleClick_superman_mousemover(){
+        this.setState({
+            superman:true
+        })
+    }
+    handleClick_superman_mouseout(){
+        this.setState({
+            superman:false
+        })
+    }
+
+    handleClick_setSetting_mousemover(){
+        this.setState({
+            setSetting:true
+        })
+    }
+    handleClick_setSetting_mouseout(){
+        this.setState({
+            setSetting:false
+        })
+    }
+
+    handleClick_ba(){
+
+    }
     render(){
-        const home=function(){
-            return (
-                <div>
-                    <nav className="home_nav_headline_first">Web</nav>
-                    <div className="home_nav_content">
-                        <Row type="flex" justify="center" gutter={{xl:30,lg:30,md:25,sm:20}}>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_node.jpg"/></li>
-                                        <li>NodeJS</li>
-                                        <li>node.js基本模块的使用和npm包管理器，express框架，mysql基本操作。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20} >
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_js.jpg"/></li>
-                                        <li>JS</li>
-                                        <li>js基本语法，this指向和闭包，面向对象编程。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_vue.jpg"/></li>
-                                        <li>Vue</li>
-                                        <li>Vue组件开发，高阶用法，封装插件，各类问题汇总。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20} >
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_react.jpg"/></li>
-                                        <li>React</li>
-                                        <li>react基本用法，jsx语法，redux数据流。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_es6.jpg"/></li>
-                                        <li>ES6</li>
-                                        <li>ES6常用语法，新特性，promise异步操作。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20} >
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_h5.jpg"/></li>
-                                        <li>H5</li>
-                                        <li>H5新特性，HTTP、HTTPS、安全通信。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_webpack.jpg"/></li>
-                                        <li>Webpack</li>
-                                        <li>入口文件，出口文件，loader转换器，plugins插件。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20} >
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_xiaochengxu.jpg"/></li>
-                                        <li>微信小程序</li>
-                                        <li>小程序开发流程，App与Page wx与window添加事件等。</li>
-                                        <li className="clearfix"><span>4个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
-                    <nav className="home_nav_headline">Superman</nav>
-                    <div className="home_nav_content">
-                        <Row type="flex" justify="center" gutter={{lg:30,md:25,sm:20}}>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_personal_station.jpg" style={{top:'-40px'}}/></li>
-                                        <li>PersonalStation</li>
-                                        <li>个人站</li>
-                                        <li className="clearfix"><span>1个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-                                <div className="home_nav_content_list">
-                                    <ul>
-                                        <li><img src="./img/home_resume.jpg" style={{left:'-26px',top:'-189px'}}/></li>
-                                        <li>Resume</li>
-                                        <li>个人简历</li>
-                                        <li className="clearfix"><span>1个目录</span><strong className="fr">Strive</strong></li>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-        
-                            </Col>
-                            <Col xl={5} lg={5} md={7} sm={11} xs={20}>
-        
-                            </Col>
-                        </Row>
-                    </div>
-                </div>
-            )
-        }
         var b=function(){
             return <p style={{paddingTop:'500px'}}>bbbbbbb</p>    
         }
@@ -145,9 +73,9 @@ class Home extends Component{
                     <div className="home_header clearfix">
                         <h1 className="home_headline fl" onClick={this.handleClick_home.bind(this)}>Strive</h1>
                         <ul className="home_module">
-                            <li>
-                                <div>Web</div>
-                                <ol>
+                            <li onMouseOver={this.handleClick_web_mousemover.bind(this)} onMouseOut={this.handleClick_web_mouseout.bind(this)}>
+                                <div className={this.state.web==true?'home_hover':''}>Web</div>
+                                <ol style={{display:this.state.web==true?'block':'none'}}>
                                     <li>NodeJS</li>
                                     <li>JS</li>
                                     <li>Vue</li>
@@ -158,16 +86,16 @@ class Home extends Component{
                                     <li>微信小程序</li>
                                 </ol>  
                             </li>
-                            <li>
-                                <div>Superman</div>
-                                <ol>
+                            <li onMouseOver={this.handleClick_superman_mousemover.bind(this)} onMouseOut={this.handleClick_superman_mouseout.bind(this)}>
+                                <div className={this.state.superman==true?'home_hover':''}>Superman</div>
+                                <ol style={{display:this.state.superman==true?'block':'none'}}>
                                     <li>personalStation</li>
                                     <li>resume</li>
                                 </ol>  
                             </li>
-                            <li>
-                                <div>设置</div>
-                                <ol>
+                            <li onMouseOver={this.handleClick_setSetting_mousemover.bind(this)} onMouseOut={this.handleClick_setSetting_mouseout.bind(this)}>
+                                <div className={this.state.setSetting==true?'home_hover':''}>设置</div>
+                                <ol style={{display:this.state.setSetting==true?'block':'none'}}>
                                     <li>sd</li>
                                     <li>sd</li>
                                     <li>sd</li>
@@ -175,12 +103,15 @@ class Home extends Component{
                                 </ol>  
                             </li>
                         </ul>
+                        <div className="home_module2">
+                            <div className="home_module2_ba active" ref="aaa"></div> 
+                        </div> 
                     </div>
                 </div>
 
                 <Switch>
                     <Route path="/home/b" exact component={b}/>
-                    <Route path="/home" component={home}/>
+                    <Route path="/home" exact component={HomePage}/>
                 </Switch>
 
                 <div className="home_tail">
