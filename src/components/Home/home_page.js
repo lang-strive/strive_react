@@ -8,7 +8,8 @@ class HomePage extends Component{
         super();
     }
     handleScroll(e){
-        var scrollTop = document.body.scrollTop;
+        // var scrollTop = document.body.scrollTop;
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
         // console.log('滚动距离 '+scrollTop)
         // console.log('设备宽度'+document.body.clientWidth)
         // console.log('可视区'+document.body.offsetHeight)

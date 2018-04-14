@@ -104,7 +104,7 @@ class Home extends Component{
                             </li>
                         </ul>
                         <div className="home_module2">
-                            <div className="home_module2_ba active" ref="aaa"></div> 
+                            <div className="home_module2_ba" ref="aaa"></div> 
                         </div> 
                     </div>
                 </div>
