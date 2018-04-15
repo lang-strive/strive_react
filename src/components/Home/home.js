@@ -60,8 +60,30 @@ class Home extends Component{
         })
     }
 
-    handleClick_ba(){
-
+    handleClick_btn(){
+        if(this.refs.home_module2_btn.className.indexOf('active')!=-1){
+            function handleClick_btn(obj){
+                obj.classList.remove('active');
+            }
+            handleClick_btn(this.refs.home_module2_background);
+            handleClick_btn(this.refs.home_module2_btn);
+            handleClick_btn(this.refs.home_module2_menu);
+        }else{
+            function handleClick_btnTwo(obj){
+                obj.classList.add('active');
+            }
+            handleClick_btnTwo(this.refs.home_module2_background);
+            handleClick_btnTwo(this.refs.home_module2_btn);
+            handleClick_btnTwo(this.refs.home_module2_menu);
+        }
+    }
+    handleClick_background(){
+        function handleClick_background(obj){
+            obj.classList.remove('active');
+        }
+        handleClick_background(this.refs.home_module2_background);
+        handleClick_background(this.refs.home_module2_btn);
+        handleClick_background(this.refs.home_module2_menu);
     }
     render(){
         var b=function(){
@@ -104,7 +126,19 @@ class Home extends Component{
                             </li>
                         </ul>
                         <div className="home_module2">
-                            <div className="home_module2_ba" ref="aaa"></div> 
+                            <div className="home_module2_background" ref="home_module2_background" onClick={this.handleClick_background.bind(this)}></div> 
+                            <div className="home_module2_btn" ref="home_module2_btn" onClick={this.handleClick_btn.bind(this)}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div  className="home_module2_menu" ref="home_module2_menu">
+                                <ul>
+                                    <li>Web</li> 
+                                    <li>Superman</li>   
+                                    <li>设置</li>   
+                                </ul>
+                            </div>
                         </div> 
                     </div>
                 </div>
