@@ -19,11 +19,6 @@ class Home extends Component{
             setSetting:false
         }
     }
-    componentDidMount(){
-        setTimeout(()=>{
-
-        },1000)
-    }
     handleClick_home(){
         this.props.history.replace('/home');
     }
@@ -111,17 +106,16 @@ class Home extends Component{
                             <li onMouseOver={this.handleClick_superman_mousemover.bind(this)} onMouseOut={this.handleClick_superman_mouseout.bind(this)}>
                                 <div className={this.state.superman==true?'home_hover':''}>Superman</div>
                                 <ol style={{display:this.state.superman==true?'block':'none'}}>
-                                    <li>personalStation</li>
-                                    <li>resume</li>
+                                    <li>PersonalStation</li>
+                                    <li>Resume</li>
                                 </ol>  
                             </li>
                             <li onMouseOver={this.handleClick_setSetting_mousemover.bind(this)} onMouseOut={this.handleClick_setSetting_mouseout.bind(this)}>
                                 <div className={this.state.setSetting==true?'home_hover':''}>设置</div>
                                 <ol style={{display:this.state.setSetting==true?'block':'none'}}>
-                                    <li>sd</li>
-                                    <li>sd</li>
-                                    <li>sd</li>
-                                    <li>sd</li>
+                                    <li>修改密码</li>
+                                    <li>更换头像</li>
+                                    <li>退出</li>
                                 </ol>  
                             </li>
                         </ul>
@@ -134,9 +128,28 @@ class Home extends Component{
                             </div>
                             <div  className="home_module2_menu" ref="home_module2_menu">
                                 <ul>
-                                    <li>Web</li> 
-                                    <li>Superman</li>   
-                                    <li>设置</li>   
+                                    <li><span>Web</span></li> 
+                                    <ol>
+                                        <li><i></i>NodeJS</li>
+                                        <li><i></i>JS</li>
+                                        <li><i></i>Vue</li>
+                                        <li><i></i>React</li>
+                                        <li><i></i>ES6</li>
+                                        <li><i></i>H5</li>
+                                        <li><i></i>Webpack</li>
+                                        <li><i></i>微信小程序</li>
+                                    </ol>
+                                    <li><span>Superman</span></li>   
+                                    <ol>
+                                        <li><i></i>PersonalStation</li>
+                                        <li><i></i>Resume</li>
+                                    </ol>
+                                    <li><span>设置</span></li> 
+                                    <ol>  
+                                        <li><i></i>修改密码</li>
+                                        <li><i></i>更换头像</li>
+                                        <li><i></i>退出</li>
+                                    </ol>
                                 </ul>
                             </div>
                         </div> 
