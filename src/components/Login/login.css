@@ -11,7 +11,7 @@
     font-size:35px;
     color: #fff;
     text-align: center;
-    margin-top:130px;
+    margin-top:100px;
 }
 .login_describe{
     color: #fff;
@@ -26,8 +26,15 @@
     margin:40px auto 0;
     border-radius: 6px;
 }
+.login_modal_box_reg{
+    width:400px;
+    height:415px;
+    background:#fff;
+    margin:40px auto 0;
+    border-radius: 6px;
+}
 
-.login_modal_box p{
+.login_modal_box p,.login_modal_box_reg p{
     font-size: 14px;
     color: #48576a;
     margin-bottom:10px;
@@ -36,19 +43,25 @@
 .login_modal_box p:nth-child(1){
     padding-top:50px;
 }
+.login_modal_box_reg p:nth-child(1){
+    padding-top:40px;
+}
 .login_modal_box p:nth-of-type(2){
     padding-top:30px;
 }
-.login_modal_box p i{
+.login_modal_box_reg p:nth-of-type(2),.login_modal_box_reg p:nth-of-type(3){
+    padding-top:25px;
+}
+.login_modal_box p i,.login_modal_box_reg p i{
     color: #ff4949;
     padding-right:6px;
 }
-.login_banner .login_modal_box .login_input{
+.login_banner .login_modal_box .login_input,.login_banner .login_modal_box_reg .login_input{
     width:320px;
     height:40px;
     margin-left:40px;
 }
-.login_banner .login_modal_box .login_primary{
+.login_banner .login_modal_box .login_primary,.login_banner .login_modal_box_reg .login_primary{
     width:320px;
     height:40px;
     background: black;
@@ -76,7 +89,7 @@
         font-size:35px;
         color: #fff;
         text-align: center;
-        margin-top:100px;
+        margin-top:90px;
     }
     .login_modal_box>.reg{
         position: relative;
@@ -92,7 +105,7 @@
         font-size:35px;
         color: #fff;
         text-align: center;
-        margin-top:80px;
+        margin-top:70px;
     }
     .login_modal_box {
         width:350px;
@@ -101,18 +114,25 @@
         margin:40px auto 0;
         border-radius: 6px;
     }
-    .login_modal_box p{
+    .login_modal_box_reg {
+        width:350px;
+        height:400px;
+        background:#fff;
+        margin:40px auto 0;
+        border-radius: 6px;
+    }
+    .login_modal_box p,.login_modal_box_reg p{
         font-size: 14px;
         color: #48576a;
         margin-bottom:10px;
         padding-left:25px;
     }
-    .login_banner .login_modal_box .login_input{
+    .login_banner .login_modal_box .login_input,.login_banner .login_modal_box_reg .login_input{
         width:300px;
         height:40px;
         margin-left:25px;
     }
-    .login_banner .login_modal_box .login_primary{
+    .login_banner .login_modal_box .login_primary,.login_banner .login_modal_box_reg .login_primary{
         width:300px;
         height:40px;
         background: black;
@@ -144,18 +164,31 @@
         margin:30px auto 0;
         border-radius: 6px;
     }
-    .login_modal_box p{
+    .login_modal_box_reg {
+        width:300px;
+        height:370px;
+        background:#fff;
+        margin:30px auto 0;
+        border-radius: 6px;
+    }
+    .login_modal_box_reg p:nth-of-type(1){
+        padding-top:30px;
+    }
+    .login_modal_box_reg p:nth-of-type(2),.login_modal_box_reg p:nth-of-type(3){
+        padding-top:20px;
+    }
+    .login_modal_box p,.login_modal_box_reg p{
         font-size: 14px;
         color: #48576a;
         margin-bottom:10px;
         padding-left:10px;
     }
-    .login_banner .login_modal_box .login_input{
+    .login_banner .login_modal_box .login_input,.login_banner .login_modal_box_reg .login_input{
         width:280px;
         height:40px;
         margin-left:10px;
     }
-    .login_banner .login_modal_box .login_primary{
+    .login_banner .login_modal_box .login_primary,.login_banner .login_modal_box_reg .login_primary{
         width:280px;
         height:40px;
         background: black;
