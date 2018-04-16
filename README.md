@@ -1,6 +1,6 @@
 # create-react-app
 
-> A React.js project
+>  React.js 
 
 ## Build Setup
 
